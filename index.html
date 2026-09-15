@@ -1,0 +1,82 @@
+<!doctype html>
+<html
+  <head>
+    <title>Practice</title>
+    </head>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background-size: cover;
+    display: flex;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    padding: 1rem;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2rem;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #101000;
+    font-size: 25px;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+a:hover {
+    color: rgb(249, 255, 74);
+}
+    </style>
+    <body>
+      <nav>
+        <ul>
+          <li><a href="#"">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="portofolio.html">Portfolio</a></li> 
+          <li><a href="#">Sticker</a></li>
+        </ul>
+      </nav>
+    </body>
+</html>
