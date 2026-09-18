@@ -1,104 +1,563 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Contact</title>
-    <h1>PLAYLIST</h1>
-    <style>
-      .kotak1 {
-        background-color: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        padding: 5rem;
-        width: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 10rem;
-        border-radius: 30px;
-        border: 1px solid rgba(255, 255, 255, 0.6);
-        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
-      }
-            * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Segoe UI", sans-serif;
-      }
 
-      body {
-        min-height: 100vh;
-        padding: 50px;
-        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-      }
-       h1 {
-        text-align: center;
-        margin-bottom: 10px;
-      }
-       .kembali {
-        display: block;
-        width: fit-content;
-        margin: 1000px auto 0;
-        padding: 10px 20px;
-        background: white;
-        color: black;
-        text-decoration: none;
-        border-radius: 20px;
-      }
-    </style>
-    <a class="kembali" href="index.html">← BACK TO HOME POOR PEOPLE</a>
-  <body>
-    <div class="kotak1">
-        1. Lagu Mau dibawa kemana
-        <p><!-- Menggunakan target="_blank" agar membuka tab/aplikasi baru -->
-<a href="https://youtu.be/acD6B_eR5yk?si=J453o06lNzpa-7_x" target="_blank" rel="noopener noreferrer">
-    https://youtu.be/acD6B_eR5yk?si=J453o06lNzpa-7_x
-</a>
-</p>
- <style>
-      .kotak2 {
-        background-color: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        padding: 5rem;
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 20rem;
-        border-radius: 30px;
-        border: 1px rgba(255, 255, 255, 0.6);
-        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
-      }
-    </style>
- <div class="kotak2">
-        2. Song Don't Look Back In Anger
-        <p><!-- Menggunakan target="_blank" agar membuka tab/aplikasi baru -->
-<a href="https://youtu.be/r8OipmKFDeM?si=0ChWwME9T17BD7I2" target="_blank" rel="noopener noreferrer">
-   https://youtu.be/r8OipmKFDeM?si=0ChWwME9T17BD7I2
-</a>
-</p>
-<style>
-      .kotak3 {
-        background-color: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-        position: fixed;
-        padding: 5rem;
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 25rem;
-        border-radius: 30px;
-        border: 1px solid rgba(255, 255, 255, 0.6);
-        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
-      }
-    </style>
- <div class="kotak3">
-        3. Curi Spotlight
-        <p><!-- Menggunakan target="_blank" agar membuka tab/aplikasi baru -->
-<a href="https://youtu.be/R0o0m5iQO1w?si=j9CLgf__sBk3W1Pd" target="_blank" rel="noopener noreferrer">
-   https://youtu.be/R0o0m5iQO1w?si=j9CLgf__sBk3W1Pd
-</a>
-</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 50px 20px;
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+      background-image: url(DAPP.jpg);
+      background-size: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    /* Container playlist */
+    .playlist-container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 75px;
+    }
+
+    /* Semua kotak playlist */
+    .kotak1,
+    .kotak2,
+    .kotak3,
+    .kotak4,
+    .kotak5,
+    .kotak6,
+    .kotak7,
+    .kotak8,
+    .kotak9,
+    .kotak10,
+    .kotak11,
+    .kotak12,
+    .kotak13,
+    .kotak14,
+    .kotak15,
+    .kotak16,
+    .kotak17,
+    .kotak18,
+    .kotak19,
+    .kotak20,
+    .kotak21,
+    .kotak22,
+    .kotak23,
+    .kotak24,
+    .kotak25,
+    .kotak26,
+    .kotak27,
+    .kotak28,
+    .kotak29,
+    .kotak30{
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+
+      position: relative;
+
+      padding: 1rem;
+
+      width: 100%;
+
+      border-radius: 30px;
+
+      border: 1px solid rgba(255, 255, 255, 0.6);
+
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Link YouTube */
+    .playlist-container a {
+      color: #551a8b;
+      word-break: break-all;
+    }
+
+    /* Tombol kembali */
+    .kembali {
+      display: block;
+      width: fit-content;
+
+      margin: 80px auto 50px;
+
+      padding: 10px 20px;
+
+      background: white;
+      color: black;
+
+      text-decoration: none;
+
+      border-radius: 20px;
+
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .kembali:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
+
+<body>
+
+  <h1>PLAYLIST</h1>
+
+  <div class="playlist-container">
+
+    <!-- KOTAK 1 -->
+    <div class="kotak1">
+      1. MEJIKUHIBINIU - Tenxi Feat Suisei
+
+      <p>
+        <a
+          href="https://youtu.be/N7LpNIDCyCA?si=y8Yk6KdqOlTGKKFt"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/N7LpNIDCyCA?si=y8Yk6KdqOlTGKKFt
+        </a>
+      </p>
     </div>
-  </body>
+
+
+    <!-- KOTAK 2 -->
+    <div class="kotak2">
+      2. Song Don't Look Back In Anger - OASIS
+
+      <p>
+        <a
+          href="https://youtu.be/r8OipmKFDeM?si=0ChWwME9T17BD7I2"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://youtu.be/r8OipmKFDeM?si=0ChWwME9T17BD7I2
+        </a>
+      </p>
+    </div>
+
+
+    <!-- KOTAK 3 -->
+    <div class="kotak3">
+      3. Curi Spotlight - Tenxi
+
+      <p>
+        <a
+          href="https://youtu.be/R0o0m5iQO1w?si=j9CLgf__sBk3W1Pd"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://youtu.be/R0o0m5iQO1w?si=j9CLgf__sBk3W1Pd
+        </a>
+      </p>
+    </div>
+
+
+    <!-- KOTAK 4 -->
+    <div class="kotak4">
+      4. Move On - STAND HERE ALONE (SHA)
+
+      <p>
+        <a
+          href="https://youtu.be/s59CSBi4bsA?si=hqW-NGUGld7___Bw"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://youtu.be/s59CSBi4bsA?si=hqW-NGUGld7___Bw
+        </a>
+      </p>
+    </div>
+
+  <!-- KOTAK 5 -->
+    <div class="kotak4">
+      5. Cuman Satu - Tenxi Feat Suisei
+
+      <p>
+        <a
+          href="https://youtu.be/r4puA1XHgx0?si=5RUwF7n-t0CQ0AeS"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/r4puA1XHgx0?si=5RUwF7n-t0CQ0AeS
+        </a>
+      </p>
+    </div>
+
+      <!-- KOTAK 6 -->
+    <div class="kotak4">
+      6. Siapa yang Salah - RAISA FEAT DIMUY
+
+      <p>
+        <a
+          href="https://youtu.be/0JNKpS79QQw?si=GdEMSgkn2bNpDT_F"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/0JNKpS79QQw?si=GdEMSgkn2bNpDT_F
+        </a>
+      </p>
+    </div>
+
+        <!-- KOTAK 7 -->
+    <div class="kotak4">
+      7. A Part Of Me - Neck Deep
+
+      <p>
+        <a
+          href="https://youtu.be/VOyYwzkQB98?si=ts_kcoghCeh-fW9x"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/VOyYwzkQB98?si=ts_kcoghCeh-fW9x
+        </a>
+      </p>
+    </div>
+
+        <!-- KOTAK 8 -->
+    <div class="kotak4">
+      8. Cewek Short Hair - Ardy Minaj
+
+      <p>
+        <a
+          href="https://youtu.be/c6Q3gP6M73w?si=3PynquIePLE2FxVB"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://youtu.be/c6Q3gP6M73w?si=3PynquIePLE2FxVB
+         
+        </a>
+      </p>
+    </div>
+
+        <!-- KOTAK 9 -->
+    <div class="kotak4">
+      9. Maybe - Tenxi
+
+      <p>
+        <a
+          href="https://youtu.be/0Ki32x5JGK4?si=gcuxL5fCemICoBHj"
+          target="_blank"
+          rel="noopener noreferrer">
+       https://youtu.be/0Ki32x5JGK4?si=gcuxL5fCemICoBHj
+        </a>
+      </p>
+    </div>
+
+        <!-- KOTAK 10 -->
+    <div class="kotak4">
+      10. Berubah - Tenxi
+
+      <p>
+        <a
+          href="https://youtu.be/qnbwUiSudIk?si=6OrXeLV0o5WZoIjV"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/qnbwUiSudIk?si=6OrXeLV0o5WZoIjV
+        </a>
+      </p>
+    </div>
+
+     <!-- KOTAK 11 -->
+    <div class="kotak1">
+      11. Winner - Tenxi
+
+      <p>
+        <a
+          href="https://youtu.be/s_8ueeSw5_w?si=h1PpddEniMNcwynJ"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/s_8ueeSw5_w?si=h1PpddEniMNcwynJ
+        </a>
+      </p>
+    </div>
+
+
+    <!-- KOTAK 12 -->
+    <div class="kotak2">
+      12. Alergi - Sueisei Feat Dimuy
+
+      <p>
+        <a
+          href="https://youtu.be/UaTc0gpwrzo?si=vNwR1Hz80SehgCoZ"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://youtu.be/UaTc0gpwrzo?si=vNwR1Hz80SehgCoZ
+        </a>
+      </p>
+    </div>
+
+
+    <!-- KOTAK 13 -->
+    <div class="kotak3">
+      13. Bukan Love Song - Suisei Feat Lucidrari
+
+      <p>
+        <a
+          href="https://youtu.be/UQD2LpV_ZKQ?si=SQN_mjgqMWz43jgt"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://youtu.be/UQD2LpV_ZKQ?si=SQN_mjgqMWz43jgt
+        </a>
+      </p>
+    </div>
+
+
+    <!-- KOTAK 14 -->
+    <div class="kotak4">
+      14. Best Friend - Rex Orange County
+
+      <p>
+        <a
+          href="https://youtu.be/OqBuXQLR4Y8?si=rcSvs7f4qyxQdrLp"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://youtu.be/OqBuXQLR4Y8?si=rcSvs7f4qyxQdrLp
+        </a>
+      </p>
+    </div>
+
+  <!-- KOTAK 15 -->
+    <div class="kotak4">
+      15. Ga Peka - DIA
+
+      <p>
+        <a
+          href="https://youtu.be/1sSyNelkPIU?si=kF-bPUjO7F-mY5jz"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/1sSyNelkPIU?si=kF-bPUjO7F-mY5jz
+        </a>
+      </p>
+    </div>
+
+      <!-- KOTAK 16 -->
+    <div class="kotak4">
+      16. Bentar Lagi Sayang - Indahkus
+
+      <p>
+        <a
+          href="https://youtu.be/0lrlWCM9mGs?si=Tpk-V4gIe44SphXl"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/0lrlWCM9mGs?si=Tpk-V4gIe44SphXl
+        </a>
+      </p>
+    </div>
+
+        <!-- KOTAK 17 -->
+    <div class="kotak4">
+      17. Patriot - Lil Tatang
+
+      <p>
+        <a
+          href="https://youtu.be/lrnpmXqAh1E?si=sGUZr2DKzplCD-uv"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/lrnpmXqAh1E?si=sGUZr2DKzplCD-uv
+        </a>
+      </p>
+    </div>
+
+        <!-- KOTAK 18 -->
+    <div class="kotak4">
+      18. Ku Ingin Kau Mati Saja - Souljah
+
+      <p>
+        <a
+          href="https://youtu.be/yThTR4TZ1j8?si=ia_BETX5PtqUufUO"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://youtu.be/yThTR4TZ1j8?si=ia_BETX5PtqUufUO
+         
+        </a>
+      </p>
+    </div>
+
+        <!-- KOTAK 19 -->
+    <div class="kotak4">
+      19. Bilang I Love You - Souljah
+
+      <p>
+        <a
+          href="https://youtu.be/3FGGRisqgGY?si=SgKE1NiSSWEIbpIM"
+          target="_blank"
+          rel="noopener noreferrer">
+       https://youtu.be/3FGGRisqgGY?si=SgKE1NiSSWEIbpIM
+        </a>
+      </p>
+    </div>
+
+        <!-- KOTAK 20 -->
+    <div class="kotak4">
+      20. Bernadya Full Album - Bernadya
+
+      <p>
+        <a
+          href="https://youtu.be/HMOIh-VpzE8?si=oqFptCw_AeWCfuim"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/HMOIh-VpzE8?si=oqFptCw_AeWCfuim
+        </a>
+      </p>
+    </div>
+
+      <!-- KOTAK 21 -->
+    <div class="kotak4">
+      21. Foto Kita Blur - Sal Priadi
+
+      <p>
+        <a
+          href="https://youtu.be/ytMxh-_6EcI?si=AAHKiKyUIsj_7hr-"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/ytMxh-_6EcI?si=AAHKiKyUIsj_7hr-
+        </a>
+      </p>
+    </div>
+
+     <!-- KOTAK 22 -->
+    <div class="kotak1">
+      22. INDEPENDENT - Tenxi
+
+      <p>
+        <a
+          href="https://youtu.be/0aioEjeH3Go?si=a9uBUs-nvJMRj-ut"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/0aioEjeH3Go?si=a9uBUs-nvJMRj-ut
+        </a>
+      </p>
+    </div>
+
+
+    <!-- KOTAK 23 -->
+    <div class="kotak2">
+      23. MADUN - TENXI
+
+      <p>
+        <a
+          href="https://youtu.be/pS_u-t_0DcI?si=NTlGotzP_8p-hg3N
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/pS_u-t_0DcI?si=NTlGotzP_8p-hg3N
+        </a>
+      </p>
+    </div>
+
+
+    <!-- KOTAK 24 -->
+    <div class="kotak3">
+      24. RAYAKAN PERTEMANAN - MCPR
+
+      <p>
+        <a
+          href="https://youtu.be/1clHWdLc8-g?si=M__EcWyLxsSP7mNV"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://youtu.be/1clHWdLc8-g?si=M__EcWyLxsSP7mNV
+        </a>
+      </p>
+    </div>
+
+
+    <!-- KOTAK 25 -->
+    <div class="kotak4">
+      25. Mantan - STAND HERE ALONE (SHA)
+
+      <p>
+        <a
+          href="https://youtu.be/NnFaur4Z7Vo?si=CFaCdFNYGxzw0k6l"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://youtu.be/NnFaur4Z7Vo?si=CFaCdFNYGxzw0k6l
+        </a>
+      </p>
+    </div>
+
+  <!-- KOTAK 26 -->
+    <div class="kotak4">
+      26. Korban Lelaki - STAND HERE ALONE (FEAT-PUTRI)
+
+      <p>
+        <a
+          href="https://youtu.be/pMU9a54Gkhc?si=dp2btANT8ZwjmWQ7"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/pMU9a54Gkhc?si=dp2btANT8ZwjmWQ7
+        </a>
+      </p>
+    </div>
+
+      <!-- KOTAK 27 -->
+    <div class="kotak4">
+      27. Suka Sama kamu - Bagindas
+
+      <p>
+        <a
+          href="https://youtu.be/xfWow9c-2os?si=mFnvsC6T772qufWA"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/xfWow9c-2os?si=mFnvsC6T772qufWA
+        </a>
+      </p>
+    </div>
+
+        <!-- KOTAK 28 -->
+    <div class="kotak4">
+      28. Mau Dibawa Kemana - Armada
+
+      <p>
+        <a
+          href="https://youtu.be/acD6B_eR5yk?si=aQib2drfeGvdiyXR"
+          target="_blank"
+          rel="noopener noreferrer">
+         https://youtu.be/acD6B_eR5yk?si=aQib2drfeGvdiyXR
+        </a>
+      </p>
+    </div>
+
+        <!-- KOTAK 29 -->
+    <div class="kotak4">
+      29. 100% Cintaku - Bagindas
+
+      <p>
+        <a
+          href="https://youtu.be/0ghSoYwvSjk?si=7_XLP3GA7bOSYhHx"
+          target="_blank"
+          rel="noopener noreferrer">
+          https://youtu.be/0ghSoYwvSjk?si=7_XLP3GA7bOSYhHx
+         
+        </a>
+      </p>
+    </div>
+
+        <!-- KOTAK 30 -->
+    <div class="kotak4">
+      30. Semua Tentang Kita - Peterpen
+
+      <p>
+        <a
+          href="https://youtu.be/hhn-nGSuenM?si=8_1dcyqBWzWeZjn5"
+          target="_blank"
+          rel="noopener noreferrer">
+       https://youtu.be/hhn-nGSuenM?si=8_1dcyqBWzWeZjn5
+        </a>
+      </p>
+    </div>
+
+
+  <!-- BACK TO HOME -->
+  <a class="kembali" href="index.html">
+    ← BACK TO HOME POOR PEOPLE
+  </a>
+
+</body>
 </html>
